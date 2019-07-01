@@ -4,7 +4,7 @@ An xposed module to fuck the damn MIUI 10.
 [中文说明](/README-CN.md)
 # Download
 You can download in the following sites：
-- [GitHub releases](/releases)
+- [GitHub releases](https://github.com/tianma8023/FuckMiui/releases)
 - [Coolapk](https://www.coolapk.com/apk/com.tianma.fuckmiui)
 
 # Attention

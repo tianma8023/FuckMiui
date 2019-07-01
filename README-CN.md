@@ -4,7 +4,7 @@
 [English README](/README-EN.md)
 # 下载
 可在以下地方下载：
-- [releases](/releases)
+- [GitHub releases](https://github.com/tianma8023/FuckMiui/releases)
 - [酷安](https://www.coolapk.com/apk/com.tianma.fuckmiui)
 
 # 注意
