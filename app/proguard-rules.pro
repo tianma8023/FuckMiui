@@ -28,6 +28,6 @@
     public void initZygote(...);
 }
 
--keep class com.tianma.tweaks.miui.utils.ModuleUtils {
+-keep class com.tianma.fuckmiui.utils.ModuleUtils {
     boolean isModuleActive();
 }

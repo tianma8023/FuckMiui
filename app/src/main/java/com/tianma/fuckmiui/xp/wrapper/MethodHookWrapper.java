@@ -11,7 +11,7 @@ public abstract class MethodHookWrapper extends XC_MethodHook {
         try {
             before(param);
         } catch (Throwable t) {
-            XLog.d("Error in hook %s", param.method.getName(), t);
+            XLog.e("Error in hook %s", param.method.getName(), t);
         }
     }
 

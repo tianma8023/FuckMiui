@@ -18,7 +18,7 @@ public class SecurityCenterHook extends BaseHook {
     @Override
     public void onLoadPackage(XC_LoadPackage.LoadPackageParam lpparam) throws Throwable {
         if (PACKAGE_NAME.equals(lpparam.packageName)) {
-            XLog.i("Hooking security center...");
+            XLog.i("Hooking Security Center...");
 
             XSharedPreferences xsp = XSPUtils.getXSharedPreferences();
 

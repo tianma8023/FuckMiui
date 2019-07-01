@@ -18,7 +18,7 @@ public class SystemServiceHook extends BaseHook {
     @Override
     public void onLoadPackage(XC_LoadPackage.LoadPackageParam lpparam) throws Throwable {
         if (PACKAGE_NAME.equals(lpparam.packageName)) {
-            XLog.i("Hooking Android system service...");
+            XLog.i("Hooking Android System Services...");
 
             XSharedPreferences xsp = XSPUtils.getXSharedPreferences();
 
