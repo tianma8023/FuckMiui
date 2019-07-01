@@ -63,3 +63,27 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+
+
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/*
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+# eclipse
+.settings/
+*.project
+*/.classpath
+
+# vscode
+.vscode/*
