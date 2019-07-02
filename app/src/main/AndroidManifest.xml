@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.tianma.fuckmiui">
+          package="com.tianma.fkmiui">
 
     <application
         android:allowBackup="false"
@@ -23,7 +23,7 @@
             android:value="30"/>
 
         <activity
-            android:name=".app.MainActivity"
+            android:name="com.tianma.fkmiui.app.MainActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -35,7 +35,7 @@
 
         <activity-alias
             android:name=".app.MainActivityAlias"
-            android:targetActivity=".app.MainActivity">
+            android:targetActivity="com.tianma.fkmiui.app.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

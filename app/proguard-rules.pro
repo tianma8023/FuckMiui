@@ -28,6 +28,6 @@
     public void initZygote(...);
 }
 
--keep class com.tianma.fuckmiui.utils.ModuleUtils {
+-keep class com.tianma.fkmiui.utils.ModuleUtils {
     boolean isModuleActive();
 }

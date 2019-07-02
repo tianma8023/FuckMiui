@@ -12,13 +12,13 @@ def static releaseTime() {
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.tianma.fuckmiui"
+        applicationId "com.tianma.fkmiui"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
         versionName "1.0.0"
 
-        buildConfigField("String", "LOG_TAG", "\"FuckMiui\"")
+        buildConfigField("String", "LOG_TAG", "\"FkMiui\"")
         buildConfigField("boolean", "LOG_TO_XPOSED", "true")
         buildConfigField("boolean", "LOG_TO_EDXPOSED", "true")
     }
@@ -71,7 +71,7 @@ android {
 
     applicationVariants.all { variant ->
         variant.outputs.all { output ->
-            output.outputFileName = "FuckMiui_${variant.versionName.replaceAll('\\s+', '_')}_${releaseTime()}_${variant.buildType.name.charAt(0)}.apk"
+            output.outputFileName = "FkMiui_${variant.versionName.replaceAll('\\s+', '_')}_${releaseTime()}_${variant.buildType.name.charAt(0)}.apk"
         }
     }
 }
