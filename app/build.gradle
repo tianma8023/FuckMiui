@@ -1,9 +1,12 @@
 apply plugin: 'com.android.application'
 
-def key = file('F:\\Keystore\\tianma.jks')
+def key = file(findProperty("tianma.keystore.path") as String)
+def propFile = file(findProperty("tianma.signature.path") as String)
 
 def keyProps = new Properties()
-keyProps.load(new FileInputStream("app\\signature.properties"))
+if (propFile.exists()) {
+    keyProps.load(new FileInputStream(propFile))
+}
 
 def static releaseTime() {
     return new Date().format("yyMMdd", TimeZone.default)
@@ -58,8 +61,6 @@ android {
             if (key.exists()) {
                 println "using keystore"
                 signingConfig signingConfigs.release
-            } else {
-                println "using no keystore"
             }
         }
     }
@@ -78,9 +79,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.0.0' // material design support
-    implementation 'androidx.preference:preference:1.1.0-beta01' // preference-v7
+    implementation 'androidx.preference:preference:1.1.0' // preference-v7
     implementation 'androidx.browser:browser:1.0.0' // custom tabs
 
     // Xposed
@@ -88,8 +89,8 @@ dependencies {
     compileOnly 'de.robv.android.xposed:api:82:sources'
 
     // ButterKnife
-    implementation 'com.jakewharton:butterknife:10.1.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
 
     // Android Shell
     implementation 'com.jaredrummler:android-shell:1.0.0'
