@@ -13,6 +13,7 @@
 
     <string name="pref_miui_settings_title">系统设置</string>
     <string name="pref_disable_3rd_launcher_limit_title">取消第三方桌面限制</string>
+    <string name="pref_forbid_usb_connected_chooser_title">禁止刚连接USB时选择USB模式的弹窗</string>
 
     <string name="pref_security_center_title">安全中心</string>
     <string name="pref_disable_adb_install_verify_title">禁用Adb安装验证</string>

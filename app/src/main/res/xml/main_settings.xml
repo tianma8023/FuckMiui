@@ -23,6 +23,11 @@
             android:key="@string/pref_disable_3rd_launcher_limit"
             android:title="@string/pref_disable_3rd_launcher_limit_title"/>
 
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_forbid_usb_connected_chooser"
+            android:title="@string/pref_forbid_usb_connected_chooser_title"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory

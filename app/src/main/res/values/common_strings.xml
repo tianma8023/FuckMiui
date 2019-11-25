@@ -7,6 +7,7 @@
     <string name="pref_main_switch">main_switch</string>
 
     <string name="pref_disable_3rd_launcher_limit">disable_3rd_launcher_limit</string>
+    <string name="pref_forbid_usb_connected_chooser">forbid_usb_connected_chooser</string>
 
     <string name="pref_disable_adb_install_verify">disable_adb_install_verify</string>
     <string name="pref_disable_start_activity_confirm">disable_start_activity_confirm</string>

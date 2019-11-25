@@ -12,6 +12,7 @@
 
     <string name="pref_miui_settings_title">System Settings</string>
     <string name="pref_disable_3rd_launcher_limit_title">Disable 3rd launcher limitation</string>
+    <string name="pref_forbid_usb_connected_chooser_title">Forbid USB mode chooser dialog when USB connected</string>
 
     <string name="pref_security_center_title">Security Center</string>
     <string name="pref_disable_adb_install_verify_title">Disable ADB install verify</string>

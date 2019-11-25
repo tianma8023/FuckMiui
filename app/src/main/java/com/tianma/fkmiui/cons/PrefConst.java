@@ -6,6 +6,7 @@ public interface PrefConst {
     String MAIN_SWITCH = "main_switch";
 
     String DISABLE_3RD_LAUNCHER_LIMIT = "disable_3rd_launcher_limit";
+    String FORBID_USB_CONNECTED_CHOOSER = "forbid_usb_connected_chooser";
 
     String DISABLE_ADB_INSTALL_VERIFY = "disable_adb_install_verify";
     String DISABLE_START_ACTIVITY_CONFIRM = "disable_start_activity_confirm";

@@ -28,6 +28,7 @@ public class SettingsHook extends BaseHook {
                     return;
                 }
                 new DefaultHomeSettingsHook(classLoader, xsp).startHook();
+                new UsbModeChooserActivityHook(classLoader, xsp).startHook();
             }
 
         }

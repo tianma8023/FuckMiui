@@ -10,6 +10,7 @@ import de.robv.android.xposed.XSharedPreferences;
 import static com.tianma.fkmiui.cons.PrefConst.DISABLE_3RD_LAUNCHER_LIMIT;
 import static com.tianma.fkmiui.cons.PrefConst.DISABLE_ADB_INSTALL_VERIFY;
 import static com.tianma.fkmiui.cons.PrefConst.DISABLE_START_ACTIVITY_CONFIRM;
+import static com.tianma.fkmiui.cons.PrefConst.FORBID_USB_CONNECTED_CHOOSER;
 import static com.tianma.fkmiui.cons.PrefConst.MAIN_SWITCH;
 
 public class XSPUtils {
@@ -48,6 +49,13 @@ public class XSPUtils {
      */
     public static boolean disable3rdLauncherLimit(XSharedPreferences xsp) {
         return xsp.getBoolean(DISABLE_3RD_LAUNCHER_LIMIT, false);
+    }
+
+    /**
+     * 是否在USB刚连接时禁止USB模式选择弹窗
+     */
+    public static boolean forbidUsbModeChooserWhenUsbConnecte(XSharedPreferences xsp) {
+        return xsp.getBoolean(FORBID_USB_CONNECTED_CHOOSER, false);
     }
 
     /**
